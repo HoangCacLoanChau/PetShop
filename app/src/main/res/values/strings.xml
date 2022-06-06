@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Project_SE150664</string>
+    <string-array name="catagories">
+        <item>scottish</item>
+        <item>golden</item>
+        <item>husky</item>
+        <item>labrador</item>
+        <item>Bulldog</item>
+        <item>bernese</item>
+        <item>alaskan</item>
+        <item>bernese</item>
+        <item>alaskan</item>
+        <item>bernese</item>
+
+
+    </string-array>
+    <string-array name="description">
+        <item>1This is random description</item>
+        <item>2This is random description</item>
+        <item>3This is random description</item>
+        <item>4This is random description</item>
+        <item>5This is random description</item>
+        <item>6This is random description</item>
+        <item>7This is random description</item>
+        <item>8This is random description</item>
+        <item>9This is random description</item>
+        <item>10This is random description</item>
+
+    </string-array>
+</resources>
