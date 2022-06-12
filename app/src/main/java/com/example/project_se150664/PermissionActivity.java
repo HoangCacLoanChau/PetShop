@@ -26,7 +26,7 @@ public class PermissionActivity extends AppCompatActivity {
         btn_web.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri webpage = Uri.parse("https://www.youtube.com/watch?v=qQ75cxc5q8o&ab_channel=TheFlutterWay");
+                Uri webpage = Uri.parse("https://www.youtube.com");
                 Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
 
                 if(intent.resolveActivity(getPackageManager()) != null){
@@ -39,7 +39,7 @@ public class PermissionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel: 11111111"));
+                intent.setData(Uri.parse("tel: 18001000"));
                 if(intent.resolveActivity(getPackageManager()) != null){
                     startActivity(intent);
                 }

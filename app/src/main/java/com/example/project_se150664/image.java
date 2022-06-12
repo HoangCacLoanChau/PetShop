@@ -19,7 +19,7 @@ public class image extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image);
-        TextView article_text = findViewById(R.id.product1);
+        TextView article_text = findViewById(R.id.call);
 
     }
 

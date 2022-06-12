@@ -1,5 +1,7 @@
 package com.example.project_se150664;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,8 +32,12 @@ public class ShoppingViewActivity extends AppCompatActivity {
     }
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.product1:
-                Toast.makeText(ShoppingViewActivity.this, "1", Toast.LENGTH_LONG).show();
+            case R.id.call:
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel: 18001000"));
+                if(intent.resolveActivity(getPackageManager()) != null){
+                    startActivity(intent);
+                }
                 return true;
             case R.id.product2:
                 Toast.makeText(ShoppingViewActivity.this, "2", Toast.LENGTH_LONG).show();
