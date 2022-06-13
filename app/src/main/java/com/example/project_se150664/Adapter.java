@@ -1,13 +1,22 @@
 package com.example.project_se150664;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,6 +29,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     Context context;
     private int position;
     CardView card;
+
 
 
     public int getPosition() {
@@ -41,6 +51,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+
         LayoutInflater layoutInflater = LayoutInflater.from(viewGroup.getContext());
         View itemView = layoutInflater.inflate(R.layout.mylayout, viewGroup,false);
         return new ViewHolder(itemView);
@@ -76,12 +87,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
 
 
+
+
         public ViewHolder(@NonNull View itemView) {
+
             super(itemView);
             d1 = itemView.findViewById(R.id.catagory_txt);
             d2= itemView.findViewById(R.id.description_txt);
             myImage = itemView.findViewById(R.id.image111);
             itemView.setOnCreateContextMenuListener(this);
+
         }
 
         @Override

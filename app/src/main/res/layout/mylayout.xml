@@ -26,6 +26,19 @@
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp">
 
+            <Button
+                android:id="@+id/Buy"
+                android:layout_width="81dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="64dp"
+                android:text="Buy"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toEndOf="@+id/catagory_txt"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.246" />
+
             <ImageView
                 android:id="@+id/image111"
                 android:layout_width="100dp"
@@ -55,10 +68,10 @@
                 android:id="@+id/catagory_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="44dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="16dp"
                 android:text="TextView"
-                android:textSize="20sp"
+                android:textSize="22dp"
                 app:layout_constraintStart_toEndOf="@+id/image111"
                 app:layout_constraintTop_toTopOf="parent" />
         </android.support.constraint.ConstraintLayout>
