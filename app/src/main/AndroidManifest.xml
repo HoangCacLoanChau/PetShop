@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_SE150664">
         <activity
-            android:name=".ShoppingViewActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +29,7 @@
             android:name=".image"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ShoppingViewActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
