@@ -50,6 +50,10 @@ public class LoginActivity extends AppCompatActivity {
                     SaveInfo(username,password,check);
                     users = newuser;
                     Toast.makeText(LoginActivity.this, "OK", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(LoginActivity.this, ShoppingViewActivity.class);
+
+                    startActivity(intent);
+
 
 
                 }
